@@ -11,10 +11,10 @@ import org.json.simple.parser.ParseException;
 
 
 
-public class Yelp_User {
+public class YelpUser {
 	String userJsonFilePath="";
 	//Constructor
-	Review(String userJsonFilePath){
+	YelpUser(String userJsonFilePath){
 		this.userJsonFilePath= userJsonFilePath'
 	}
 	public void populateData() throws SQLException, IOException{
