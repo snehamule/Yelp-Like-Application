@@ -13,8 +13,13 @@ import org.json.simple.parser.ParseException;
 
 
 public class Review {
+	String reviewJsonFilePath="";
+	//Constructor
+	Review(String reviewJsonFilePath){
+		this.reviewJsonFilePath= reviewJsonFilePath'
+	}
 	public void populateReviewData() throws org.json.simple.parser.ParseException, FileNotFoundException, IOException, ParseException, ClassNotFoundException, SQLException{
-		final String filePath = "yelp_review.json";
+		
 		ArrayList<JSONObject> json=new ArrayList<JSONObject>();
 		    JSONObject obj;
 		    String line = null;
@@ -23,7 +28,7 @@ public class Review {
 		    BufferedReader bufferedReader=null;
 		    PreparedStatement preparedStatement = null;
 		    try {
-		    	fileReader = new FileReader(filePath);
+		    	fileReader = new FileReader(reviewJsonFilePath);
 		    	bufferedReader = new BufferedReader(fileReader);
 		        int i =0;
 				Class.forName("oracle.jdbc.driver.OracleDriver");
