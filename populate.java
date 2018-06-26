@@ -31,7 +31,7 @@ public class populate {
     	Business b= new Business();
     	Review r = new Review();
     	Checkin c = new Checkin();
-    	Yelp_User y= new Yelp_User();
+    	YelpUser y= new YelpUser();
 
     	
     	
