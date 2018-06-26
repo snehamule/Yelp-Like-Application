@@ -22,6 +22,7 @@ Java , Java swing <br />
 
 ## Setup required:<br />
 Java version: 1.8 or greater<br />
+Database : Oracle database 10.g or above<br />
 External jars : json-simple-1.1.jar
 
 
