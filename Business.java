@@ -20,7 +20,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class Business {
-final String filePath = "yelp_business.json";
+	
 ArrayList<JSONObject> json=new ArrayList<JSONObject>();
 JSONObject obj;
 String line = null;
@@ -31,9 +31,16 @@ PreparedStatement preparedStatement = null;
 PreparedStatement preparedStatementBusinessTiming =null;
 PreparedStatement preparedStatementBusinessCategory =null;
 PreparedStatement preparedStatementBusinessAttributes= null;
+String 	businessJsonFilePath= "";
+Business(){
+}
+//constructor
+Business(String businessJsonFilePath){
+      this.businessJsonFilePath= businessJsonFilePath;
+}	
 public void getBusinessData() throws ClassNotFoundException, SQLException, IOException{
 		try {
-		    fileReader = new FileReader(filePath);
+		    fileReader = new FileReader(businessJsonFilePath);
 		    bufferedReader = new BufferedReader(fileReader);
 		    int i =0;
 		    RetriveData r = new RetriveData();
@@ -41,7 +48,7 @@ public void getBusinessData() throws ClassNotFoundException, SQLException, IOExc
 		    mainCategoryList=r.getBusinessCategory();
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
-            Set<String> hs = new HashSet<>();
+            		Set<String> hs = new HashSet<>();
 
 			//con.prepareStatement("DELETE FROM businessTiming").executeUpdate();
 			//con.prepareStatement("DELETE FROM businessCategory").executeUpdate();
