@@ -17,8 +17,13 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class Checkin {
+	String checkinJsonFilePath="";
+	//Constructor
+	Checkin(String checkinJsonFilePath){
+		this.checkinJsonFilePath= checkinJsonFilePath'
+	}
 	public void populateCheckinData() throws org.json.simple.parser.ParseException, FileNotFoundException, IOException, ParseException, ClassNotFoundException, SQLException{
-		final String filePath = "yelp_checkin.json";
+		
 		ArrayList<JSONObject> json=new ArrayList<JSONObject>();
 		    JSONObject obj;
 		    String line = null;
@@ -27,7 +32,7 @@ public class Checkin {
 		    BufferedReader bufferedReader=null;
 		    PreparedStatement preparedStatement = null;
 		    try {
-		        fileReader = new FileReader(filePath);
+		        fileReader = new FileReader(checkinJsonFilePath);
 		        bufferedReader = new BufferedReader(fileReader);
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				int i=0;
