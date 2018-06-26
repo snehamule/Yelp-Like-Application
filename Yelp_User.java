@@ -12,8 +12,13 @@ import org.json.simple.parser.ParseException;
 
 
 public class Yelp_User {
+	String userJsonFilePath="";
+	//Constructor
+	Review(String userJsonFilePath){
+		this.userJsonFilePath= userJsonFilePath'
+	}
 	public void populateData() throws SQLException, IOException{
-		final String filePath = "yelp_user.json";
+		
 		ArrayList<JSONObject> json=new ArrayList<JSONObject>();
 		    JSONObject obj;
 		    String line = null;
@@ -24,7 +29,7 @@ public class Yelp_User {
 		    PreparedStatement preparedFriend =null;
 		    PreparedStatement pre=null;
 		    try {
-		        fileReader = new FileReader(filePath);
+		        fileReader = new FileReader(userJsonFilePath);
 		        bufferedReader = new BufferedReader(fileReader);
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
