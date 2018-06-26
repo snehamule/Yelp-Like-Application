@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class populate {
 	public static void main(String[] args) throws SQLException, ClassNotFoundException, IOException{
     	if (args.length !=4) {
-    		System.out.println("Argument must contain 4 files:  business.json, review.json, checki.json, user.json");
+    		System.out.println("Argument must contain 4 files:  business.json, review.json, checkin.json, user.json");
     	}
     	if (args.length == 4){
 		Business b= new Business(args[0]);
