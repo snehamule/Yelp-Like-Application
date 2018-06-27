@@ -1,17 +1,7 @@
-This is replica of yelp application.
-User can select business and review based on various catagory. User can narrow down search using facet search.
-Yelp dataset has used a smaller version of real Yelp dataset 
-(The dataset which Yelp.com has announced the “Yelp Dataset Challenge”) containing 42K businesses, 252K users, and 1.1M reviews.
-UI is designed using Java Swing and Oracle 11g Database is used for back-end data storage.
-Designed ER diagram, schema design for an application 
-ORACLE Database |JDBC connection | Swing GUI
-
-Language : Java , Java swing
-Database : Oracle 11g
 
 # YELP like Application
 
-This is replica of yelp application. It will display business and reviews of buisiness to user according to serach criteria. This application allow user to select business and review based on various catagory.Also user can narrow down search using facet search .
+This is replica of YELP application. It will display business and reviews of buisiness to user according to serach criteria. This application allow user to select business and review based on various catagory.Also user can narrow down search using facet search .
 
 
 ## Description: 
@@ -40,10 +30,10 @@ User can also download those files from  [Yelp database challenge](https://www.y
 2. Place downloaded dataset files in the same folder (Optional Step)
 3. For  compile java program 
 ```
-	javac populate.java
+	javac MainPage.java
 ```	
 4. To run java program 
 ```
-	java populate
+	java MainPage
 ```
 
