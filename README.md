@@ -21,7 +21,7 @@ Database : Oracle database 10.g or above<br />
 External jars : json-simple-1.1.jar
 
 ## Install JDK <br />
-If jdk is not installed then need to install JDK:<br />
+If JDK is not installed then need to install JDK:<br />
 <br />
 **For  osx operating system (mac)**<br />
 	Refer JDK installation [JDK installment guide for OSX](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html) 
