@@ -20,6 +20,17 @@ Java version: 1.8 or greater<br />
 Database : Oracle database 10.g or above<br />
 External jars : json-simple-1.1.jar
 
+## Install JDK <br />
+If jdk is not installed then need to install JDK:<br />
+<br />
+**For  osx operating system (mac)**<br />
+	Refer JDK installation [JDK installment guide for OSX](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html) 
+	
+**For windows operating system**<br />
+	Refer JDK installation [JDK installment guide for Windows](https://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html) 
+	
+## Check Java version:
+java -version
 
 ## Download json-simple-1.1.jar <br />
 In this project Json-simple is used to parse json file. 
