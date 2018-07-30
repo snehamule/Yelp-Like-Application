@@ -23,11 +23,20 @@ External jars : json-simple-1.1.jar
 ## Install JDK <br />
 If JDK is not installed then need to install JDK:<br />
 <br />
-**For  osx operating system (mac)**<br />
-	Refer JDK installation [JDK installment guide for OSX](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html) 
+**Install jdk for osx operating system (mac)**<br />
+	Refer JDK installation [JDK installment guide for OSX](https://docs.oracle.com/html/B13954_01/toc.htm) 
 	
-**For windows operating system**<br />
+**Install jdk for windows operating system**<br />
 	Refer JDK installation [JDK installment guide for Windows](https://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html) 
+	
+## Install Oracle database <br />
+If Oracle database is not installed then need to install Oracle database:<br />
+<br />
+**Install oracle database for osx operating system (mac)**<br />
+	Refer Oracle database installation [Oracle datbase installment guide for OSX](https://www.oracle.com/technetwork/database/database-technologies/macos/documentation/index.html) 
+	
+**Install oracle database for windows operating system**<br />
+	Refer Oracle database installation [Oracle database installment guide for Windows](https://docs.oracle.com/database/121/NTDBI/toc.htm) 
 	
 ## Check Java version:
 java -version
